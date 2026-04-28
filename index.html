@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Detallado - Iglesia</title>
+    <style>
+        body {
+            margin: 0; padding: 0;
+            background: url('fondo.jpg') no-repeat center center fixed;
+            background-size: cover; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .capa-oscura {
+            background: rgba(0, 0, 0, 0.6); 
+            min-height: 100vh;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            padding: 20px 0;
+        }
+        .tarjeta {
+            background: white; 
+            padding: 30px; 
+            border-radius: 25px;
+            width: 90%; 
+            max-width: 450px; 
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+        .logo-iglesia {
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%;
+            margin-bottom: 15px; 
+            border: 3px solid #1a2a6c;
+            object-fit: contain;
+            background-color: transparent;
+        }
+        h1 { color: #1a2a6c; margin-bottom: 5px; font-size: 22px; }
+        p { color: #666; margin-bottom: 20px; font-size: 14px; }
+        input, textarea, select {
+            width: 100%; 
+            padding: 12px; 
+            margin: 8px 0;
+            border: 1px solid #ddd; 
+            border-radius: 10px;
+            box-sizing: border-box; 
+            font-size: 15px;
+            background-color: #f9f9f9;
+        }
+        .fila { display: flex; gap: 10px; }
+        button {
+            background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 100%);
+            color: white; 
+            border: none; 
+            padding: 15px;
+            width: 100%; 
+            border-radius: 10px; 
+            font-weight: bold;
+            font-size: 17px; 
+            cursor: pointer; 
+            margin-top: 15px;
+      <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Detallado - Iglesia</title>
+    <style>
+        body {
+            margin: 0; padding: 0;
+            background: url('fondo.jpg') no-repeat center center fixed;
+            background-size: cover; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .capa-oscura {
+            background: rgba(0, 0, 0, 0.6); 
+            min-height: 100vh;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            padding: 20px 0;
+        }
+        .tarjeta {
+            background: white; 
+            padding: 30px; 
+            border-radius: 25px;
+            width: 90%; 
+            max-width: 450px; 
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+        .logo-iglesia {
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%;
+            margin-bottom: 15px; 
+            border: 3px solid #1a2a6c;
+            object-fit: contain;
+            background-color: transparent;
+        }
+        h1 { color: #1a2a6c; margin-bottom: 5px; font-size: 22px; }
+        p { color: #666; margin-bottom: 20px; font-size: 14px; }
+        input, textarea, select {
+            width: 100%; 
+            padding: 12px; 
+            margin: 8px 0;
+            border: 1px solid #ddd; 
+            border-radius: 10px;
+            box-sizing: border-box; 
+            font-size: 15px;
+            background-color: #f9f9f9;
+        }
+        .fila { display: flex; gap: 10px; }
+        button {
+            background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 100%);
+            color: white; 
+            border: none; 
+            padding: 15px;
+            width: 100%; 
+            border-radius: 10px; 
+            font-weight: bold;
+            font-size: 17px; 
+            cursor: pointer; 
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="capa-oscura">
+        <div class="tarjeta">
+            <img src="logo.png" class="logo-iglesia" alt="Logo">
+            <h1>Ficha de Registro</h1>
+            <p>Completa tu información para el censo</p>
+
+            <form action="https://formspree.io/f/mkokdbkg" method="POST">
+                
+                <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+                <input type="email" name="correo" placeholder="Correo electrónico" required>
+                
+                <div class="fila">
+                    <input type="text" name="cedula" placeholder="Cédula/ID" required style="width: 60%;">
+                    <input type="number" name="edad" placeholder="Edad" required style="width: 40%;">
+                </div>
+
+                <input type="tel" name="telefono" placeholder="Número de Teléfono" required>
+                <input type="text" name="direccion" placeholder="Dirección de habitación" required>
+
+                <div class="fila">
+                    <select name="estado_civil" required>
+                        <option value="" disabled selected>Estado Civil</option>
+                        <option value="soltero">Soltero/a</option>
+                        <option value="casado">Casado/a</option>
+                        <option value="divorciado">Divorciado/a</option>
+                        <option value="viudo">Viudo/a</option>
+                    </select>
+
+                    <select name="tiene_hijos" required>
+                        <option value="" disabled selected>¿Tiene hijos?</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <input type="number" name="cuantos_hijos" placeholder="¿Cuántos hijos tiene?" min="0">
+                <textarea name="peticion" placeholder="Petición de oración o comentarios..." rows="2"></textarea>
+                
+                <input type="hidden" name="_subject" value="Nuevo Registro de Censo - Iglesia">
+                
+                <button type="submit">REGISTRAR INFORMACIÓN</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
